@@ -8,20 +8,20 @@
  * 
  * 
  */
-
+#define grueneLED 3          //Grüne LED auf Pin 3
 
 void setup() 
 {
-  pinMode(3, OUTPUT);         //LED grün
+  pinMode(grueneLED, OUTPUT); //LED grün
   Serial.begin(9600);         //zum testen
 }
 
 void loop() 
 {
- digitalWrite(3, HIGH);      //LED an
- Serial.print("LED an ");
- delay(1000);               // Wartezeit
- digitalWrite(3,LOW);       // LED aus
- Serial.print("LED aus ");
- delay(1000);
+ digitalWrite(grueneLED, HIGH);      //LED an
+ Serial.print("Grüne LED an ");
+ delay(1000);                        //Wartezeit
+ digitalWrite(grueneLED,LOW);        //LED aus
+ Serial.print("Grüne LED aus ");
+ delay(1000);                        //Wartezeit
 }
